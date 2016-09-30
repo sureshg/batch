@@ -163,7 +163,7 @@ def upload(args)
         :key => file,
         :body => File.open(file),
         :public => true
-    ).save
+    )
     size += File.size(file)
   }
   finish = Time.now
